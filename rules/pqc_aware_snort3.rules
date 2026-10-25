@@ -1,0 +1,45 @@
+# =============================================================================
+# pqc_aware_snort3.rules
+# -----------------------------------------------------------------------------
+# Snort3 port of pqc_aware.rules. Logic is IDENTICAL to the Suricata version;
+# only the rule syntax differs. Snort3's grammar attaches distance/within as
+# comma-separated modifiers on the content option itself (e.g.
+# content:"X", distance 0, within 80;) rather than as separate
+# semicolon-terminated keywords used by Suricata/legacy Snort2 syntax
+# (content:"X"; distance:0; within:80;). All sids, msgs, and detection intent
+# are unchanged from pqc_aware.rules to keep the two engines' results
+# directly comparable.
+# =============================================================================
+
+alert tcp any any -> any 443 (msg:"PQC-AWARE ClientHello offers hybrid PQC group (X25519MLKEM768)"; \
+    flow:to_server,established; \
+    content:"|00 33|"; content:"|11 ec|", distance 0, within 80; \
+    flowbits:set,pqc.offered; flowbits:noalert; \
+    classtype:not-suspicious; sid:9000001; rev:1;)
+
+alert tcp any any -> any 443 (msg:"PQC-AWARE ClientHello offers hybrid PQC group (legacy X25519Kyber768)"; \
+    flow:to_server,established; \
+    content:"|00 33|"; content:"|63 99|", distance 0, within 80; \
+    flowbits:set,pqc.offered; flowbits:noalert; \
+    classtype:not-suspicious; sid:9000002; rev:1;)
+
+alert tcp any 443 -> any any (msg:"PQC-AWARE Legitimate PQC-hybrid session negotiated (server selected ML-KEM hybrid)"; \
+    flow:to_client,established; flowbits:isset,pqc.offered; \
+    content:"|00 33|"; content:"|11 ec|", distance 0, within 20; \
+    flowbits:set,pqc.negotiated; flowbits:noalert; \
+    classtype:not-suspicious; sid:9000003; rev:1;)
+
+alert tcp any 443 -> any any (msg:"PQC-AWARE ALERT - Possible Hybrid-to-Classical Downgrade Attack (client offered PQC, server negotiated classical-only)"; \
+    flow:to_client,established; flowbits:isset,pqc.offered; \
+    content:"|00 33|"; content:"|00 1d|", distance 0, within 12; \
+    classtype:attempted-admin; priority:1; sid:9000010; rev:1;)
+
+alert tcp any 443 -> any any (msg:"PQC-AWARE ALERT - Possible Hybrid-to-Classical Downgrade Attack (client offered PQC, server negotiated secp256r1 classical)"; \
+    flow:to_client,established; flowbits:isset,pqc.offered; \
+    content:"|00 33|"; content:"|00 17|", distance 0, within 12; \
+    classtype:attempted-admin; priority:1; sid:9000011; rev:1;)
+
+alert tcp any any -> any 443 (msg:"PQC-AWARE Non-standard oversized ClientHello (unrecognised KEM, review recommended)"; \
+    flow:to_server,established; dsize:>512; \
+    content:!"|11 ec|"; content:!"|63 99|"; \
+    classtype:protocol-command-decode; priority:3; sid:9000020; rev:1;)

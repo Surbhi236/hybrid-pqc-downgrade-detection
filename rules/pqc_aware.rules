@@ -1,0 +1,71 @@
+# =============================================================================
+# pqc_aware.rules
+# -----------------------------------------------------------------------------
+# Proposed PQC-aware detection logic for SOC/IDS tooling.
+#
+# Design principle: instead of a blind size threshold, correlate what the
+# CLIENT offered (supported_groups / key_share containing a recognised
+# hybrid PQC group codepoint) against what the SERVER actually negotiated.
+#
+#   - If client offers hybrid AND server negotiates hybrid  -> legitimate
+#     PQC-protected session. Silently tagged, NOT alerted (flowbits:noalert).
+#   - If client offers hybrid AND server negotiates CLASSICAL-ONLY -> this
+#     is the textbook hybrid-downgrade attack signature described in the
+#     literature (RQ: "Hybrid Cryptography Downgrade Attacks"). ALERT.
+#   - Oversized handshakes that don't match ANY known PQC group codepoint
+#     are flagged as non-standard/proprietary KEM implementations
+#     (medium severity, for analyst triage rather than auto-block).
+#
+# Known group codepoints used:
+#   0x11EC = X25519MLKEM768   (IETF draft-ietf-tls-ecdhe-mlkem, current draft)
+#   0x6399 = X25519Kyber768Draft00 (legacy Chrome/Cloudflare codepoint)
+#   0x001D = X25519 (classical)
+#   0x0017 = secp256r1 (classical)
+# =============================================================================
+
+# --- Step 1: tag flows where the CLIENT offers a recognised hybrid PQC group ---
+alert tcp any any -> any 443 (msg:"PQC-AWARE ClientHello offers hybrid PQC group (X25519MLKEM768)"; \
+    flow:to_server,established; \
+    content:"|00 33|"; content:"|11 ec|"; distance:0; within:80; \
+    flowbits:set,pqc.offered; flowbits:noalert; \
+    classtype:not-suspicious; sid:9000001; rev:1;)
+
+alert tcp any any -> any 443 (msg:"PQC-AWARE ClientHello offers hybrid PQC group (legacy X25519Kyber768)"; \
+    flow:to_server,established; \
+    content:"|00 33|"; content:"|63 99|"; distance:0; within:80; \
+    flowbits:set,pqc.offered; flowbits:noalert; \
+    classtype:not-suspicious; sid:9000002; rev:1;)
+
+# --- Step 2: legitimate hybrid negotiation -> server also picks a hybrid group ---
+alert tcp any 443 -> any any (msg:"PQC-AWARE Legitimate PQC-hybrid session negotiated (server selected ML-KEM hybrid)"; \
+    flow:to_client,established; flowbits:isset,pqc.offered; \
+    content:"|00 33|"; content:"|11 ec|"; distance:0; within:20; \
+    flowbits:set,pqc.negotiated; flowbits:noalert; \
+    classtype:not-suspicious; sid:9000003; rev:1;)
+
+# --- Step 3: THE KEY DETECTION - downgrade attack signature ---
+# Client capable of / offering hybrid PQC, but negotiated ServerHello key_share
+# group is classical-only. This is the hybrid-downgrade attack pattern.
+alert tcp any 443 -> any any (msg:"PQC-AWARE ALERT - Possible Hybrid-to-Classical Downgrade Attack (client offered PQC, server negotiated classical-only)"; \
+    flow:to_client,established; flowbits:isset,pqc.offered; \
+    content:"|00 33|"; content:"|00 1d|"; distance:0; within:12; \
+    classtype:attempted-admin; priority:1; sid:9000010; rev:1;)
+
+alert tcp any 443 -> any any (msg:"PQC-AWARE ALERT - Possible Hybrid-to-Classical Downgrade Attack (client offered PQC, server negotiated secp256r1 classical)"; \
+    flow:to_client,established; flowbits:isset,pqc.offered; \
+    content:"|00 33|"; content:"|00 17|"; distance:0; within:12; \
+    classtype:attempted-admin; priority:1; sid:9000011; rev:1;)
+
+# --- Step 4: catch-all for non-standard/proprietary oversized handshakes ---
+# (large handshake that matches NEITHER known classical NOR known PQC group
+# codepoints -> flag for analyst triage, not auto-classified as an attack)
+# NOTE: uses direct negated content matching (not flowbits) because flowbits
+# set/checked within the SAME packet are not reliably ordered in Suricata's
+# detection engine - two sigs matching the same packet can evaluate in either
+# order regardless of file order, so cross-sig flowbit dependencies must
+# span at least one packet boundary (client packet -> later server packet),
+# never same-packet-to-same-packet.
+alert tcp any any -> any 443 (msg:"PQC-AWARE Non-standard oversized ClientHello (unrecognised KEM, review recommended)"; \
+    flow:to_server,established; dsize:>512; \
+    content:!"|11 ec|"; content:!"|63 99|"; \
+    classtype:protocol-command-decode; priority:3; sid:9000020; rev:1;)

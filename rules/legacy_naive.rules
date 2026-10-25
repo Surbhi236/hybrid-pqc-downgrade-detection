@@ -1,0 +1,19 @@
+# =============================================================================
+# legacy_naive.rules
+# -----------------------------------------------------------------------------
+# Represents the CURRENT generation of IDS heuristics as described in the
+# literature: static size-threshold rules calibrated for classical-only TLS
+# 1.3 handshakes (ClientHello ~200-300B, ServerHello ~100-150B). These rules
+# have NO knowledge of PQC/hybrid key exchange and will misclassify any
+# legitimate PQC-hybrid handshake as anomalous purely due to size.
+#
+# This ruleset is our "baseline" / control group for the experiment.
+# =============================================================================
+
+alert tcp any any -> any 443 (msg:"LEGACY-IDS Oversized TLS ClientHello (possible anomalous/non-standard handshake)"; \
+    flow:to_server,established; dsize:>512; \
+    classtype:protocol-command-decode; sid:8000001; rev:1;)
+
+alert tcp any 443 -> any any (msg:"LEGACY-IDS Oversized TLS ServerHello (possible anomalous/non-standard handshake)"; \
+    flow:to_client,established; dsize:>512; \
+    classtype:protocol-command-decode; sid:8000002; rev:1;)

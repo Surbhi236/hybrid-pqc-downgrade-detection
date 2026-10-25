@@ -1,0 +1,116 @@
+[
+  {
+    "scenario": "classical_baseline",
+    "ruleset": "legacy_naive",
+    "total_flows": 200,
+    "expected_alerts": 0,
+    "expected_clean": 200,
+    "raw_alert_events": 0,
+    "true_positive_flows": 0,
+    "false_positive_flows": 0,
+    "true_negative_flows": 200,
+    "false_negative_flows": 0,
+    "alert_signatures_seen": []
+  },
+  {
+    "scenario": "classical_baseline",
+    "ruleset": "pqc_aware",
+    "total_flows": 200,
+    "expected_alerts": 0,
+    "expected_clean": 200,
+    "raw_alert_events": 0,
+    "true_positive_flows": 0,
+    "false_positive_flows": 0,
+    "true_negative_flows": 200,
+    "false_negative_flows": 0,
+    "alert_signatures_seen": []
+  },
+  {
+    "scenario": "pqc_hybrid_legit",
+    "ruleset": "legacy_naive",
+    "total_flows": 200,
+    "expected_alerts": 0,
+    "expected_clean": 200,
+    "raw_alert_events": 400,
+    "true_positive_flows": 0,
+    "false_positive_flows": 200,
+    "true_negative_flows": 0,
+    "false_negative_flows": 0,
+    "alert_signatures_seen": [
+      "LEGACY-IDS Oversized TLS ClientHello (possible anomalous/non-standard handshake)",
+      "LEGACY-IDS Oversized TLS ServerHello (possible anomalous/non-standard handshake)"
+    ]
+  },
+  {
+    "scenario": "pqc_hybrid_legit",
+    "ruleset": "pqc_aware",
+    "total_flows": 200,
+    "expected_alerts": 0,
+    "expected_clean": 200,
+    "raw_alert_events": 0,
+    "true_positive_flows": 0,
+    "false_positive_flows": 0,
+    "true_negative_flows": 200,
+    "false_negative_flows": 0,
+    "alert_signatures_seen": []
+  },
+  {
+    "scenario": "pqc_downgrade_attack",
+    "ruleset": "legacy_naive",
+    "total_flows": 100,
+    "expected_alerts": 100,
+    "expected_clean": 0,
+    "raw_alert_events": 100,
+    "true_positive_flows": 100,
+    "false_positive_flows": 0,
+    "true_negative_flows": 0,
+    "false_negative_flows": 0,
+    "alert_signatures_seen": [
+      "LEGACY-IDS Oversized TLS ClientHello (possible anomalous/non-standard handshake)"
+    ]
+  },
+  {
+    "scenario": "pqc_downgrade_attack",
+    "ruleset": "pqc_aware",
+    "total_flows": 100,
+    "expected_alerts": 100,
+    "expected_clean": 0,
+    "raw_alert_events": 100,
+    "true_positive_flows": 100,
+    "false_positive_flows": 0,
+    "true_negative_flows": 0,
+    "false_negative_flows": 0,
+    "alert_signatures_seen": [
+      "PQC-AWARE ALERT - Possible Hybrid-to-Classical Downgrade Attack (client offered PQC, server negotiated classical-only)"
+    ]
+  },
+  {
+    "scenario": "mixed_traffic",
+    "ruleset": "legacy_naive",
+    "total_flows": 200,
+    "expected_alerts": 0,
+    "expected_clean": 200,
+    "raw_alert_events": 200,
+    "true_positive_flows": 0,
+    "false_positive_flows": 100,
+    "true_negative_flows": 100,
+    "false_negative_flows": 0,
+    "alert_signatures_seen": [
+      "LEGACY-IDS Oversized TLS ClientHello (possible anomalous/non-standard handshake)",
+      "LEGACY-IDS Oversized TLS ServerHello (possible anomalous/non-standard handshake)"
+    ]
+  },
+  {
+    "scenario": "mixed_traffic",
+    "ruleset": "pqc_aware",
+    "total_flows": 200,
+    "expected_alerts": 0,
+    "expected_clean": 200,
+    "raw_alert_events": 0,
+    "true_positive_flows": 0,
+    "false_positive_flows": 0,
+    "true_negative_flows": 200,
+    "false_negative_flows": 0,
+    "alert_signatures_seen": []
+  }
+]

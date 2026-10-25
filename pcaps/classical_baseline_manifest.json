@@ -1,0 +1,1402 @@
+[
+  {
+    "flow": "192.168.1.50:40819->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.13:58591->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.28:54358->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.10:49401->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.58:48102->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.46:41756->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.45:52569->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.59:44481->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.29:41020->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.37:55065->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.14:43314->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.28:41435->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.42:44068->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.11:50854->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.39:46318->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.23:43306->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.14:44948->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.43:52475->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.37:40956->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.36:54810->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.47:40451->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.36:52205->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.21:47751->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.45:45032->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.42:44444->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.29:41771->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.16:40316->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.47:54762->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.55:57216->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.52:48214->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.47:44414->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.50:54384->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.41:46898->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.10:44466->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.44:56059->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.24:49840->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.15:46516->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.29:55117->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.17:55233->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.34:42821->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.28:44113->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.32:48932->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.38:41213->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.40:55873->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.22:42860->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.56:44573->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.47:55370->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.34:50307->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.26:59701->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.43:44262->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.41:56154->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.21:59793->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.48:43412->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.29:58768->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.59:45053->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.48:40233->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.40:59769->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.58:49668->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.46:59250->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.34:55033->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.41:53625->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.18:59723->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.31:46901->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.29:57021->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.53:44085->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.22:44873->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.15:57998->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.59:44803->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.45:41060->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.19:44768->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.57:40249->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.22:45667->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.19:53542->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.20:43077->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.58:49908->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.16:43480->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.57:58104->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.33:48208->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.30:42670->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.16:57081->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.42:53611->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.32:40462->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.33:40464->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.46:44256->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.57:48147->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.42:57449->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.34:47468->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.29:57380->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.46:59989->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.29:52228->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.54:45464->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.39:57129->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.30:59794->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.45:54677->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.22:58178->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.23:58077->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.42:53342->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.50:53088->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.27:59875->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.28:48143->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.41:50665->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.37:57208->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.22:56963->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.34:53238->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.37:44822->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.39:43230->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.18:53839->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.42:55769->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.44:48660->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.28:48005->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.55:58186->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.27:47466->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.13:46508->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.25:58170->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.46:43938->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.40:43548->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.34:42080->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.25:54658->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.15:48019->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.23:52196->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.29:46947->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.40:41051->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.44:42022->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.26:43190->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.13:52992->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.26:46368->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.25:42786->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.40:56784->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.14:49724->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.23:58971->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.39:40808->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.53:42425->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.22:47861->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.52:43929->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.27:56114->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.46:59434->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.31:51673->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.57:42977->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.53:56280->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.17:55435->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.19:52805->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.38:41696->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.22:49482->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.27:53941->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.31:49666->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.55:43267->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.36:51571->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.31:57803->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.24:48472->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.25:43881->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.54:48057->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.21:41632->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.58:47079->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.37:40237->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.43:57743->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.40:41036->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.35:54418->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.36:56449->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.44:52032->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.31:41015->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.28:59262->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.44:40538->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.23:50481->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.29:55667->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.22:48369->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.30:47299->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.49:41303->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.50:54756->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.37:40049->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.50:40484->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.42:53649->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.11:58045->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.17:49380->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.59:57387->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.17:50846->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.37:41914->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.55:45876->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.43:56697->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.58:58204->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.52:53870->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.43:47102->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.50:40815->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.16:44660->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.22:49802->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.47:50035->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.14:48658->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.48:46037->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.50:41828->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.15:47041->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.27:55105->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.47:40549->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.30:55472->10.0.0.10:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.10:51751->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.56:58826->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.56:47127->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.43:43852->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.19:57140->10.0.0.12:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.55:40506->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.38:56379->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  },
+  {
+    "flow": "192.168.1.42:47944->10.0.0.11:443",
+    "class": "classical",
+    "expected_alert": false,
+    "client_hello_len": 241,
+    "server_hello_len": 128
+  }
+]

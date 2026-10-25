@@ -1,0 +1,82 @@
+[
+  {
+    "scenario": "classical_baseline",
+    "ruleset": "legacy_naive",
+    "total_flows": 200,
+    "raw_alert_lines": 0,
+    "TP": 0,
+    "FP": 0,
+    "TN": 200,
+    "FN": 0
+  },
+  {
+    "scenario": "classical_baseline",
+    "ruleset": "pqc_aware",
+    "total_flows": 200,
+    "raw_alert_lines": 0,
+    "TP": 0,
+    "FP": 0,
+    "TN": 200,
+    "FN": 0
+  },
+  {
+    "scenario": "pqc_hybrid_legit",
+    "ruleset": "legacy_naive",
+    "total_flows": 200,
+    "raw_alert_lines": 400,
+    "TP": 0,
+    "FP": 200,
+    "TN": 0,
+    "FN": 0
+  },
+  {
+    "scenario": "pqc_hybrid_legit",
+    "ruleset": "pqc_aware",
+    "total_flows": 200,
+    "raw_alert_lines": 0,
+    "TP": 0,
+    "FP": 0,
+    "TN": 200,
+    "FN": 0
+  },
+  {
+    "scenario": "pqc_downgrade_attack",
+    "ruleset": "legacy_naive",
+    "total_flows": 100,
+    "raw_alert_lines": 100,
+    "TP": 100,
+    "FP": 0,
+    "TN": 0,
+    "FN": 0
+  },
+  {
+    "scenario": "pqc_downgrade_attack",
+    "ruleset": "pqc_aware",
+    "total_flows": 100,
+    "raw_alert_lines": 100,
+    "TP": 100,
+    "FP": 0,
+    "TN": 0,
+    "FN": 0
+  },
+  {
+    "scenario": "mixed_traffic",
+    "ruleset": "legacy_naive",
+    "total_flows": 200,
+    "raw_alert_lines": 200,
+    "TP": 0,
+    "FP": 100,
+    "TN": 100,
+    "FN": 0
+  },
+  {
+    "scenario": "mixed_traffic",
+    "ruleset": "pqc_aware",
+    "total_flows": 200,
+    "raw_alert_lines": 0,
+    "TP": 0,
+    "FP": 0,
+    "TN": 200,
+    "FN": 0
+  }
+]
