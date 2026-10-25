@@ -123,6 +123,19 @@ downgrade attack, and — critically — for the semantically correct reason
 (group mismatch between offer and negotiation), not an accidental size
 coincidence.
 
+### Cross-engine validation (Snort3 3.12.2.0)
+The same four pcaps and manifests were run through Snort3 using
+`rules/pqc_aware_snort3.rules` (syntax-adapted port) and the unchanged
+`legacy_naive.rules`. Per-flow TP/FP/TN/FN were identical to the Suricata
+results above in all 8 scenario x ruleset combinations (see
+`results/snort3_results.json`).
+
+### Derived precision / recall / F1 (all scenarios pooled, per engine)
+| Ruleset | TP | FP | FN | Precision | Recall | F1 |
+|---|---|---|---|---|---|---|
+| Legacy-naive | 100 | 300 | 0 | 0.25 | 1.00 | 0.40 |
+| PQC-aware | 100 | 0 | 0 | 1.00 | 1.00 | 1.00 |
+
 ## 5. Limitations (important for the paper's Discussion/Limitations section)
 
 1. **Synthetic, non-cryptographic traffic.** Handshakes are byte-structurally
@@ -136,8 +149,8 @@ coincidence.
    deployment must validate rule behaviour against fragmented/reassembled
    streams.
 3. **Small, controlled sample.** N=700 flows across scenarios, single
-   synthetic testbed, single IDS engine (Suricata 7.0.3). No Snort3
-   comparison, no real production traffic capture, no ML-based fingerprinting
+   synthetic testbed, two IDS engines (Suricata 7.0.3, Snort3 3.12.2.0). No
+   real production traffic capture, no ML-based fingerprinting
    engines (JA3/JA4) evaluated.
 4. **Single hybrid group tested.** Only X25519MLKEM768 (+ legacy
    X25519Kyber768) codepoints are covered; Falcon/Dilithium/SPHINCS+
@@ -154,8 +167,7 @@ coincidence.
 
 - Extend to real cryptographic implementations (liboqs + OpenSSL provider)
   for full protocol-state-machine validation.
-- Add Snort3 rule equivalents and compare engine-specific false-positive/
-  detection behaviour.
+- Extend the cross-engine comparison beyond Suricata and Snort3 (e.g. commercial engines).
 - Test against fragmented/reassembled traffic and real captured PQC-TLS
   traffic (e.g. from Cloudflare/Chrome hybrid deployments).
 - Extend detection to certificate-level PQC artefacts (Dilithium/Falcon
